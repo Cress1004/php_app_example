@@ -19,4 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/index', 'App\Http\Controllers\PagesController@index');
+Route::get('/services', 'App\Http\Controllers\PagesController@services');
 
