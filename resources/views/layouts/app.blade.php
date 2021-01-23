@@ -39,6 +39,12 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services">Services</a>
+                        </li>
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
@@ -76,7 +82,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 container">
             @yield('content')
         </main>
     </div>
