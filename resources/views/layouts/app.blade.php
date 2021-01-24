@@ -34,7 +34,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="/posts/create">New Post</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -45,6 +47,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/services">Services</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/posts">Posts</a>
+                        </li>
+
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
@@ -83,6 +89,7 @@
         </nav>
 
         <main class="py-4 container">
+            @include('inc.messages')
             @yield('content')
         </main>
     </div>
