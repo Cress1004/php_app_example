@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Create New Post</h1>
-    {!! Form::open(['action' => 'App\Http\Controllers\PostsController@store', 'method' => 'POST']) !!}
+    {!! Form::open(['action' => 'App\Http\Controllers\PostsController@store', 'method' => 'POST', 'encrypt' => 'multipart/data']) !!}
     <div class="form-group">
         {{ Form::label('title', 'Title') }}
         {{ Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Title']) }}
